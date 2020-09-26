@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Conditions In Javascript</title>
+	</head>
+	<body>
+		<input type="number" placeholder="Enter age" id="age" />
+
+		<script>
+			let input = document.getElementById("age");
+			const AMOUNT = 1000;
+			const AGE_LIMIT = 30;
+			console.log(input);
+			input.onblur = function () {
+				// if(this.value == AGE_LIMIT){
+				//    alert("You are not qualified for this cash because your age is not exact")
+				// }else if(this.value > AGE_LIMIT) {
+				//  alert("Go and work you re too old for this shit");
+				// }else if(this.value < AGE_LIMIT){
+				//  alert("Congrats you just recieved"+AMOUNT);
+				// }
+				switch (parseInt(this.value)) {
+					case 30:
+      alert("You are 30 years");
+						break;
+					case 40:
+						alert("You are 40");
+						break;
+					case 50:
+						alert("You are 50 years");
+						break;
+					case 60:
+						alert("You are 60");
+						break;
+					case 70:
+						alert("You are 70 years");
+						break;
+					case 80:
+						alert("You are 80");
+      break;
+     default:
+      alert("Nothing was found")
+      break;
+				}
+			};
+		</script>
+	</body>
+</html>

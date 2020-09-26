@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Working with Javascript Arrays</title>
+</head>
+<body>
+ 
+
+ <script>
+    // let name  = "Obi";
+    // let gender  = "Male";
+    // let age = 20;
+    // let occupation = "Student";
+    // let personsData = ["Obi","Male",20,"Student","mu","222","eeee"];
+    // // for(let x = 0;x < personsData.length;x++){
+    // //    if(personsData.length/2 == x){
+    // //     delete personsData[x];
+    // //     break;
+    // //    }
+    // //    console.log(personsData);
+      
+    // // }
+    // console.log(personsData);
+
+    // // console.log(personsData.sort());
+    // // personsData.pop();
+    // console.log((personsData.length/2).toFixed())
+    // personsData.splice(((personsData.length/2)).toFixed(),1)
+    // console.log(personsData);
+    // personsData.splice(((personsData.length/2)).toFixed(),1)
+    // console.log(personsData);
+
+
+    let studentsData = [
+     ["Ken","Ikem","Ojo"],
+     ["Peter","Mike"],
+     ["Okey","Poe","Geo"],
+     ["Ugo","Lol","Dax"],
+     ["Youla","Mokpe","Emeka"]
+    ]
+
+    let newOArray = [];
+    for(let index = 0;index < studentsData.length ; index++){
+
+       for(let index1 = 0 ; index1 < studentsData[index].length; index1++ ){
+          if(studentsData[index][index1][0].toLocaleLowerCase() == "o"){
+             newOArray.push(studentsData[index][index1]);
+          }
+       }
+    }
+    console.log(newOArray)
+    // let peoplesAge = new Array("James");
+    // let  joindedArray = personsData.join("-");
+    // console.log(joindedArray);
+    let sentence  = "I am a good guy";
+    console.log(sentence.slice(-4));
+    let studentsInfo = {name:"Ugwu Jude",age:20};
+    console.log(studentsInfo);
+ </script>
+</body>
+</html>

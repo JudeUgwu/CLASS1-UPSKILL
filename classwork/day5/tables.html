@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <title>CSS Tables </title>
+</head>
+<body>
+ 
+   <div class="container">
+    <h1>3 * 2 Table</h1>
+        <table border="1">
+            <tr>
+               <th>S/N</th>
+               <th>Name</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>Ada</td>
+            </tr>
+
+            <tr>
+             <td>2</td>
+             <td>Obi</td>
+            </tr>
+        </table>
+        <hr>
+        <h1>3 * 3 Table</h1>
+        <table border="1"> 
+              <tr>
+                 <th>S/N</th>
+                 <th>Name</th>
+                 <th>Age</th>
+              </tr>
+              <tr>
+                 <td>1</td>
+                 <td>Ada</td>
+                 <td>20 yrs</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Obi</td>
+                <td>40 yrs</td>
+              </tr>
+
+        </table>
+
+        <hr>
+        <h1>Row spanning in Table</h1>
+        <table border="1"> 
+              <tr>
+                 <th colspan="31">
+                   <img src="" alt="">
+                 </th>
+
+              </tr>
+              <tr>
+                 <td>1</td>
+                 <td>Ada</td>
+                 <td>20 yrs</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Obi</td>
+                <td rowspan="3">40 yrs</td>
+              </tr>
+              <tr>
+               <td>3</td>
+               <td>Jane</td>
+             
+             </tr>
+             <tr>
+              <td>4</td>
+              <td>Mark</td>
+             
+            </tr>
+            <tr>
+             <td>4</td>
+             <td>Mark</td>
+             <td>50yrs</td>
+
+            
+           </tr>
+
+        </table>
+        <hr>
+        <h1>Col spanning for Tables</h1>
+        <table border="1">
+              <tr>
+               <th>Name</th>
+               <th>Maths</th>
+               <th>Engish</th>
+               <th>Physics</th>
+              </tr>
+              <tr>
+               <td>Obi</td>
+               <td>20</td>
+               <td>25</td>
+               <td>50</td>
+
+              </tr>
+
+              <tr>
+               <td>Ikem</td>
+               <td colspan="3">20</td>
+
+
+              </tr>
+
+              <tr>
+               <td>Emeka</td>
+               <td>20</td>
+               <td>25</td>
+               <td>50</td>
+
+              </tr>
+
+              <tr>
+               <td>Nkiru</td>
+               <td>20</td>
+               <td>25</td>
+               <td>50</td>
+
+              </tr>
+        </table>
+
+   </div>
+
+</body>
+</html>
